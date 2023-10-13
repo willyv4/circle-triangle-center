@@ -1,0 +1,21 @@
+.circle {
+	position: relative;
+	width: 300px; /* Adjust as needed */
+	height: 300px; /* Adjust as needed */
+	background-color: transparent;
+	border: 2px solid #333; /* Circle border color */
+	border-radius: 50%; /* Create a circular shape */
+}
+
+.point {
+	position: absolute;
+	width: 20px; /* Adjust point size as needed */
+	height: 20px; /* Adjust point size as needed */
+	background-color: red; /* Point color */
+	border-radius: 50%; /* Make it a circle */
+	text-align: center;
+	line-height: 20px; /* Vertically center text */
+	color: white;
+	font-weight: bold;
+	transform: translate(-50%, -50%); /* Center points */
+}
