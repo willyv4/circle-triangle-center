@@ -81,12 +81,19 @@ const CircleVisual = () => {
 	return (
 		<div
 			style={{
+				margin: "10px",
 				display: "flex",
 				flexDirection: "row",
 				justifyContent: "center",
 			}}
 		>
-			<div>
+			<div
+				style={{
+					border: "2px solid gray",
+					maxWidth: "fit-content",
+					padding: "10px",
+				}}
+			>
 				<h1>Circle Simulation</h1>
 				<p>
 					Probability that triangle ABC contains the center point D:{" "}

@@ -85,22 +85,37 @@ const Circle: React.FC = () => {
 	};
 
 	return (
-		<div>
-			<p>
-				Probability that triangle ABC contains the center point D:{" "}
-				{((successCount / numSimulations) * 100).toFixed(2)}%
-			</p>
-			<p>
-				Number of Simulations:{" "}
-				<input
-					type="number"
-					value={numSimulations}
-					onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
-						setNumSimulations(parseInt(event.target.value))
-					}
-				/>
-			</p>
-			<button onClick={simulateProbability}>Calculate Probability</button>
+		<div
+			style={{
+				margin: "10px",
+				display: "flex",
+				flexDirection: "row",
+				justifyContent: "center",
+			}}
+		>
+			<div
+				style={{
+					border: "2px solid gray",
+					maxWidth: "fit-content",
+					padding: "10px",
+				}}
+			>
+				<p>
+					Probability that triangle ABC contains the center point D:{" "}
+					{((successCount / numSimulations) * 100).toFixed(2)}%
+				</p>
+				<p>
+					Number of Simulations:{" "}
+					<input
+						type="number"
+						value={numSimulations}
+						onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+							setNumSimulations(parseInt(event.target.value))
+						}
+					/>
+				</p>
+				<button onClick={simulateProbability}>Calculate Probability</button>
+			</div>
 		</div>
 	);
 };
